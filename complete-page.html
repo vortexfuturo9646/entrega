@@ -26,9 +26,6 @@
       fbq('init', '825290560048721');
       fbq('init', '804023795319915');
       fbq('init', '1153949476657735');
-
-      // Disparando evento de compra em todos
-      fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
     </script>
     
     <!-- Tailwind CSS -->
@@ -168,9 +165,13 @@
 
         // Animação de entrada da página
         window.addEventListener('load', function() {
-            // Dispara evento de compra assim que a página carrega
+            // Dispara evento de compra individual para cada pixel
             if (typeof window !== 'undefined' && window.fbq) {
-                fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
+                fbq('trackSingle', '1421303535603181', 'Purchase', {value: 10.00, currency: 'BRL'});
+                fbq('trackSingle', '636629812664247', 'Purchase', {value: 10.00, currency: 'BRL'});
+                fbq('trackSingle', '825290560048721', 'Purchase', {value: 10.00, currency: 'BRL'});
+                fbq('trackSingle', '804023795319915', 'Purchase', {value: 10.00, currency: 'BRL'});
+                fbq('trackSingle', '1153949476657735', 'Purchase', {value: 10.00, currency: 'BRL'});
             }
             
             // Anima a entrada do conteúdo

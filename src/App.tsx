@@ -7,7 +7,12 @@ function App() {
   // Dispara evento de compra assim que a página carrega
   useEffect(() => {
     if (typeof window !== 'undefined' && (window as any).fbq) {
-      (window as any).fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
+      // Dispara evento de compra individual para cada pixel
+      (window as any).fbq('trackSingle', '1421303535603181', 'Purchase', {value: 10.00, currency: 'BRL'});
+      (window as any).fbq('trackSingle', '636629812664247', 'Purchase', {value: 10.00, currency: 'BRL'});
+      (window as any).fbq('trackSingle', '825290560048721', 'Purchase', {value: 10.00, currency: 'BRL'});
+      (window as any).fbq('trackSingle', '804023795319915', 'Purchase', {value: 10.00, currency: 'BRL'});
+      (window as any).fbq('trackSingle', '1153949476657735', 'Purchase', {value: 10.00, currency: 'BRL'});
     }
   }, []);
 
