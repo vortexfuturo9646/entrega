@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larissa Souza</title>
+    
+    <!-- Pixel Meta Ads -->
+    <script>
+      !function(f,b,e,v,n,t,s) {
+        if(f.fbq)return;n=f.fbq=function() {
+          n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
+        };
+        if(!f._fbq)f._fbq=n;
+        n.push=n;
+        n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)
+      }(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+      // Inicializando múltiplos pixels
+      fbq('init', '1421303535603181');
+      fbq('init', '636629812664247');
+      fbq('init', '825290560048721');
+      fbq('init', '804023795319915');
+      fbq('init', '1153949476657735');
+
+      // Disparando evento de compra em todos
+      fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .float-animation-delayed {
+            animation: float 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.2); }
+        }
+        
+        .sparkle-animation {
+            animation: sparkle 2s ease-in-out infinite;
+        }
+        
+        .sparkle-animation-delayed {
+            animation: sparkle 2s ease-in-out infinite;
+            animation-delay: 1s;
+        }
+    </style>
+</head>
+<body>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1421303535603181&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=636629812664247&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=825290560048721&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=804023795319915&ev=PageView&noscript=1"/>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1153949476657735&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <div class="min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 flex flex-col items-center justify-center p-8 text-center relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute -top-4 -left-4 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse"></div>
+            <div class="absolute -bottom-8 -right-4 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse" style="animation-delay: 1000ms;"></div>
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-100 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse" style="animation-delay: 500ms;"></div>
+        </div>
+
+        <!-- Floating hearts and sparkles -->
+        <div class="absolute inset-0 pointer-events-none">
+            <i data-lucide="heart" class="absolute top-20 left-20 w-4 h-4 text-pink-300 animate-bounce" style="animation-delay: 300ms;"></i>
+            <i data-lucide="heart" class="absolute top-32 right-32 w-3 h-3 text-purple-300 animate-bounce" style="animation-delay: 700ms;"></i>
+            <i data-lucide="sparkles" class="absolute bottom-40 left-16 w-5 h-5 text-pink-400 animate-pulse" style="animation-delay: 1000ms;"></i>
+            <i data-lucide="sparkles" class="absolute top-40 right-20 w-4 h-4 text-purple-400 animate-pulse" style="animation-delay: 500ms;"></i>
+        </div>
+
+        <!-- Main content -->
+        <div id="main-content" class="relative z-10 transform transition-all duration-1000 translate-y-8 opacity-0">
+            <!-- Profile image with enhanced styling -->
+            <div class="relative mb-8 flex justify-center">
+                <div class="absolute inset-0 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full blur-lg opacity-30 scale-110 animate-pulse"></div>
+                <img 
+                    src="https://files.chefexpress.site/vortex/fotodeperfil.jpg" 
+                    alt="Foto de Larissa Souza"
+                    class="relative w-40 h-40 rounded-full object-cover shadow-2xl border-4 border-white ring-4 ring-pink-200 transition-transform duration-300 hover:scale-105"
+                />
+                <div class="absolute -bottom-2 -right-2 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full p-2 shadow-lg">
+                    <i data-lucide="heart" class="w-4 h-4 text-white animate-pulse"></i>
+                </div>
+            </div>
+            
+            <!-- Name with gradient text -->
+            <h1 class="text-4xl font-bold mb-3 bg-gradient-to-r from-pink-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
+                Larissa Souza
+            </h1>
+            
+            <!-- Subtitle with animation -->
+            <div class="mb-8 space-y-2">
+                <p class="text-lg text-gray-700 max-w-md leading-relaxed font-medium">
+                    Liberando agora os meus conteúdos para você amor...
+                </p>
+                <div class="flex items-center justify-center space-x-2 text-pink-500">
+                    <i data-lucide="sparkles" class="w-4 h-4 animate-spin"></i>
+                    <span class="text-sm font-semibold">Conteúdo Exclusivo</span>
+                    <i data-lucide="sparkles" class="w-4 h-4 animate-spin"></i>
+                </div>
+            </div>
+
+            <!-- Call to action button -->
+            <div class="space-y-4">
+                <button 
+                    onclick="handleButtonClick()"
+                    class="group bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 mx-auto animate-pulse"
+                >
+                    <i data-lucide="download" class="w-5 h-5 group-hover:animate-bounce"></i>
+                    <span>Acessar Conteúdos</span>
+                    <i data-lucide="heart" class="w-5 h-5 group-hover:animate-pulse"></i>
+                </button>
+                
+                <p class="text-sm text-gray-500 animate-pulse">
+                    ✨ Clique para acessar agora mesmo ✨
+                </p>
+            </div>
+
+            <!-- Decorative elements -->
+            <div class="mt-12 flex justify-center space-x-4">
+                <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></div>
+                <div class="w-2 h-2 bg-purple-400 rounded-full animate-bounce" style="animation-delay: 100ms;"></div>
+                <div class="w-2 h-2 bg-pink-400 rounded-full animate-bounce" style="animation-delay: 200ms;"></div>
+            </div>
+        </div>
+
+        <!-- Bottom decorative text -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-gray-400 animate-pulse">
+            Feito com 💖 especialmente para você
+        </div>
+    </div>
+
+    <script>
+        // Função para lidar com o clique do botão
+        function handleButtonClick() {
+            // Abre o link do Drive
+            window.open("https://drive.google.com/drive/folders/1WM_2ylYu7sO99czqaBxy37ChRjgSHYC2?usp=sharing", "_blank");
+        }
+
+        // Animação de entrada da página
+        window.addEventListener('load', function() {
+            // Dispara evento de compra assim que a página carrega
+            if (typeof window !== 'undefined' && window.fbq) {
+                fbq('track', 'Purchase', {value: 10.00, currency: 'BRL'});
+            }
+            
+            // Anima a entrada do conteúdo
+            setTimeout(function() {
+                const mainContent = document.getElementById('main-content');
+                mainContent.classList.remove('translate-y-8', 'opacity-0');
+                mainContent.classList.add('translate-y-0', 'opacity-100');
+            }, 100);
+            
+            // Inicializa os ícones Lucide
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
